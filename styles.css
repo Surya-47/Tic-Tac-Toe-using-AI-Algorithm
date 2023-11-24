@@ -1,0 +1,165 @@
+
+/* Set the background color to represent the wooden desk */
+body {
+   /* Brown color for wood */
+   background-image: url("table.jpg"); 
+   background-size: cover;
+   background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  min-height: 100vh; /* Ensure the entire viewport is covered with content */
+  overflow: hidden;
+}
+
+/* Position the notebook page on top of the wooden desk */
+#paper {
+  width: 50vw;
+  height: 100vh;
+  background-color: rgba(241, 230, 207);
+  box-shadow: 5px 0px 35px 20px rgba(0,0,0,0.5);
+}
+
+@media(max-width: 786px){
+  #paper{
+    width:75vw;
+  }
+}
+/* styling blue horizontal lines */
+#pattern {
+  height: 85%;
+  background-image: repeating-linear-gradient(rgba(241, 230, 207)0px, rgba(241, 230, 207) 30px, teal 31px);
+}
+
+/* styling text content */
+#content {
+  padding-top: 5%;
+  line-height: 25px;
+  font-size: 19px;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-start;
+  height: 80%;
+  gap: 3rem;
+
+}
+
+#hh {
+  line-height: 25px;
+  width: 100%;
+  text-align: center;
+  font-size:5vw;
+  letter-spacing: 7px; /* Adjust as needed */
+  word-spacing: 7px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+  transform: rotate(-3deg); /* Adjust the rotation angle */
+  font-family: 'Finger Paint', cursive; 
+}
+
+/* Create the wooden desk */
+.desk {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  margin-top: 50px; /* Adjust as needed */
+  /* Brown color for wood */
+  border-top: 2px solid #622A0F;
+}
+
+
+
+#replay{
+
+
+}
+
+table{
+  border-collapse: collapse;
+  font-size: 10vw;
+  
+}
+
+table tr:first-child td{
+  border-top: 0;
+}
+
+table tr:last-child td{
+  border-bottom: 0;
+}
+
+table tr td:last-child{
+  border-right: 0px;
+}
+
+
+table tr td:first-child{
+  border-left: 0px;
+}
+
+
+td{
+  border: 10px solid #333;
+  height: 11vw;
+  width: 11vw;
+  text-align: center;
+  vertical-align: middle;
+  font-family:"Comic Sans MS", cursive;
+  font-size: 70x;
+  cursor: pointer;
+}
+
+.endgame{
+  visibility:hidden;
+  padding: 20px 30px;
+  background-color: teal;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-size: 2em;
+}
+
+/* eraser */
+.eraser-wrapper {
+  width: 20vmin;
+  left: 5%;
+  transform: rotate(50deg);
+  height: 10vmin;
+  border-radius: 1vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(#7ea246 4%, #0175a2 5%, #0175a2 75%, #f7f7f7 76%, #f7f7f7 94%, #a7a7a7);
+  position: relative;
+  filter: drop-shadow(0 0 1px #a7a7a7);
+  cursor: pointer;
+}
+
+.eraser-wrapper .blob {
+  width: 20vmin;
+  height: 15vmin;
+  background: #8fbd40;
+  clip-path: circle(50% at 90% 120%);
+  position: relative;
+  top: -2.4vmin;
+}
+.eraser-wrapper .text {
+  position: absolute;
+  right: 50%;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+    font-weight: bold;
+
+}
+.eraser-wrapper .eraser {
+  width: 5vmin;
+  height: 9.5vmin;
+  border-radius: 1vmin 0 0 1vmin;
+  position: absolute;
+  left: -4vmin;
+  background: linear-gradient(#f8f7fb 2%, #dfe3ec 94%, #c0c4c7);
+}

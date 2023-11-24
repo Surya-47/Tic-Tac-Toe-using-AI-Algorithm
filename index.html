@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="head">Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <div id="pencil">
+  </div>
+    <div id="paper">
+        <h1 id="hh">Tic Tac Toe</h1>
+        <div id="pattern">
+          <div id="content">
+            <table>
+              <tr> 
+                <td class="cell" id="0"></td>
+                <td class="cell" id="1"></td>
+                <td class="cell" id="2"></td>
+              </tr>
+              <tr>
+                <td class="cell" id="3"></td>
+                <td class="cell" id="4"></td>
+                <td class="cell" id="5"></td>
+              </tr>
+              <tr>
+                <td class="cell" id="6"></td>
+                <td class="cell" id="7"></td>
+                <td class="cell" id="8"></td>
+              </tr>
+            </table>
+            <div class="endgame">
+              <div class="text">Winner</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="eraser-wrapper" onClick="startGame()" >
+        <div class="blob">
+        </div>
+        <div class="text">
+         <div>REPLAY</div>
+        </div>
+        <div class="eraser"></div>
+      </div>  
+</body>
+<script src="script.js"></script>
+</html>
