@@ -1,4 +1,6 @@
-# Tic-Tac-Toe-using-AI-Algorithm
+<h3 align="center">
+  Tic-Tac-Toe-using-AI-Algorithm
+</h3>
  <p align="center">
   <a href="#">
     <img src="https://skillicons.dev/icons?i=html,css,js" />
