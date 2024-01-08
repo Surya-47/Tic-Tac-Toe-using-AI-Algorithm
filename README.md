@@ -1,4 +1,4 @@
-<h3 align="center">
+<h1 align="center">
   Tic-Tac-Toe-using-AI-Algorithm
 </h3>
  <p align="center">
